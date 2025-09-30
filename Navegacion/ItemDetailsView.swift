@@ -47,7 +47,7 @@ struct ItemDetailsView: View {
                     .multilineTextAlignment(.center)
                 
                 HStack{
-                    Text("15,498").font(.title)
+                    Text("$15,498").font(.title)
                     Text("16% OFF").font(.callout)
                         .fontWeight(.semibold)
                         .foregroundColor(.green)
