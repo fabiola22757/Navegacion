@@ -9,15 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationStack{
-            NavigationLink(destination:
-                            Text("La prueba es esta 🪺")
-            ){
-                Text("Prueba 🐒")
+        VStack{
+            Text("Bienvenido a la tienda virtual")
+            
+            Spacer()
+            
+            NavigationStack{
+                NavigationLink(destination: ItemDetailsView()){
+                    ItemRowView()
+                }
+                
+                Spacer()
+                
+                Text("Desarrollado por: Fabiola Jrz")
             }
+            
         }
     }
 }
+
 
 #Preview {
     ContentView()
