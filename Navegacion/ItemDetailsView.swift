@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ItemDetailsView: View {
     
-    //@Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss
     /* var name: String
      var price: Float
      var priceText: String {
@@ -70,20 +70,20 @@ Con su espectacular pantalla Retina, cámara FaceTime HD y micrófonos con calid
 """).foregroundColor(Color.secondary)
                 
             }.padding()
-        }
-        
-        /*.navigationTitle("Detalles")
-         .navigationBarTitleDisplayMode(.large)
-         .navigationBarBackButtonHidden(true)
-         .toolbar {
-         ToolbarItem(placement: .navigationBarLeading) {
-         Button { dismiss() } label: {
-         Image(systemName:"arrow.backward.circle.fill")
-         .foregroundColor(.yellow)
-         }
-         }
-         }
-         */
+        }//Diseño del ScrollView:
+            .navigationTitle("Detalles")
+            .navigationBarTitleDisplayMode(.large) //modo de presentación del título
+            .navigationBarBackButtonHidden(true)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) { //posición del botón
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName:"arrow.backward.circle.fill")
+                            .foregroundColor(.yellow)
+                    }
+                }
+            }
     }
 }
 
