@@ -15,7 +15,13 @@ struct ContentView: View {
             Spacer()
             
             NavigationStack{
-                NavigationLink(destination: ItemDetailsView()){
+                NavigationLink(destination: ItemDetailsView(name: "MacBook Pro De 13,6'' Chip M2 512 Gb Ssd Gris Espacial - Distribuidor autorizado", price: 15498)){
+                    ItemRowView()
+                }
+                
+                //Spacer()
+                
+                NavigationLink(destination: ItemDetailsView(name: "MacBook Pro 2", price: 4000)){
                     ItemRowView()
                 }
                 
